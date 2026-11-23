@@ -1,0 +1,21 @@
+{
+  "name": "example-name",
+  "private": true,
+  "scripts": {
+    "dev": "wrangler dev",
+    "deploy": "wrangler deploy"
+  },
+  "devDependencies": {
+    "wrangler": "^4.0.0"
+  },
+  "cloudflare": {
+    "bindings": {
+      "PROXY_PASSWORD": {
+        "description": "비밀번호 (암호화 저장)"
+      },
+      "MODELS": {
+        "description": "모델 목록 (쉼표 구분)"
+      }
+    }
+  }
+}

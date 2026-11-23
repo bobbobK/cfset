@@ -1,0 +1,19 @@
+{
+  "name": "example-name",
+  "main": "src/index.js",
+  "compatibility_date": "2026-11-24",
+  "placement": {
+    "region": "gcp:us-south1"
+  },
+  "observability": {
+    "enabled": false
+  },
+  "vars": {
+    "MODELS": "gemini-4-carbon,gemini-4-argon,gemini-4-hydrogen,gemini-4-neon,gemini-3.7-flash,gemini-3.8-flash,gemini-3.1-pro-preview,gemini-3.1-flash-lite"
+  },
+  "secrets": {
+    "required": [
+      "PROXY_PASSWORD"
+    ]
+  }
+}
