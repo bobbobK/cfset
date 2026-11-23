@@ -163,7 +163,8 @@ let keysMemo = null;
 function loadKeys(env) {
   if (keysMemo) return keysMemo;
   const keys = [], bad = [];
-  const allow = String(env.USE_KEYS || "").split(/[\s,]+/).filter(Boolean);
+  const rawAllow = String(env.USE_KEYS || "").split(/[\s,]+/).filter(Boolean);
+  const allow = rawAllow.includes("*") ? [] : rawAllow;
   const allowSet = allow.length ? new Set(allow) : null;
   const missing = allow.filter((n) => typeof env[n] !== "string");
   for (const name of Object.keys(env).filter((k) => k.startsWith("API_") && (!allowSet || allowSet.has(k))).sort()) {
