@@ -1,7 +1,7 @@
 {
   "name": "example-name",
   "main": "src/index.js",
-  "compatibility_date": "2026-11-24",
+  "compatibility_date": "2026-11-01",
   "placement": {
     "region": "gcp:us-south1"
   },
