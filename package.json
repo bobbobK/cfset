@@ -12,6 +12,12 @@
     "bindings": {
       "PROXY_PASSWORD": {
         "description": "비밀번호 (암호화 저장)"
+      },
+      "MODELS": {
+        "description": "모델 목록 (쉼표 구분)"
+      },
+      "USE_KEYS": {
+        "description": "* 하나만 있으면 전체 API_NAME사용 (필요시 나중에 수정)"
       }
     }
   }
